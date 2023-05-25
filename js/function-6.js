@@ -27,26 +27,85 @@
 //   const numbers = [];
 // }
 
-let input = Number(prompt("Введіть число"));
-const numbers = [];
-let total = 0;
+// 23.05.22
 
-while (input) {
-  if (!isNaN(input)) {
-    numbers.push(input);
-  } else if (isNaN(input)) {
-    break;
-  } else if (input === null) {
-    break;
-  }
-}
+// const addNums = function () {
+//   const numbers = [];
+//   let total = 0;
+//   let input = Number(prompt("Введіть число"));
+//   // while (!isNaN(input)) {
+//   //   if (input === null) {
+//   //     break;
+//   //   } else {
+//   //     numbers.push(input);
+//   //   }
+//   // }
+//   do {
+//     if (input === null) {
+//       return;
+//     } else {
+//       numbers.push(input);
+//     }
+//   } while (input < 100 && !isNaN(input));
 
-const addNums = function () {
-  for (let i = 0; i < numbers.length; i++) {
-    total += numbers[i];
-    console.log(total);
-  };
-  return total;
-};
+//   for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+//     console.log(total);
+//   }
+//   console.log(numbers);
+//   return total;
+// };
 
-addNums();
+// addNums();
+
+// працююча версія
+
+// const numbers = [];
+// let total = 0;
+// let input = Number(prompt("Введіть число"));
+
+// while (input) {
+//   if (!isNaN(input)) {
+//     numbers.push(input);
+//     input = Number(prompt("Введіть число"));
+//   } else if (isNaN(input)) {
+//     break;
+//   } else if (input === null) {
+//     break;
+//   };
+// };
+// console.log(numbers);
+
+// const addNums = function () {
+//   for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+//   };
+//   console.log(total);
+//   return total;
+// };
+// addNums();
+
+// const addNums = function () {
+//   const numbers = [];
+//   let total = 0;
+//   let input = Number(prompt("Введіть число"));
+
+//   while (input) {
+//     if (!isNaN(input)) {
+//       numbers.push(input);
+//       input = Number(prompt("Введіть число"));
+//     } else if (isNaN(input)) {
+//       break;
+//     } else if (input === null) {
+//       break;
+//     };
+//   };
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+//   };
+//   console.log(numbers);
+//   console.log(total);
+//   return total;
+// };
+// addNums();
